@@ -1,0 +1,62 @@
+{
+  "doctype": "DocType",
+  "name": "Accrual Component",
+  "module": "HR Accrual Engine",
+  "custom": 0,
+  "is_submittable": 0,
+  "issingle": 0,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "component_name",
+      "fieldtype": "Data",
+      "label": "Component Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "accrual_type",
+      "fieldtype": "Select",
+      "label": "Accrual Type",
+      "options": "Ticket\nLeave\nEOS",
+      "reqd": 1
+    },
+    {
+      "fieldname": "debit_account",
+      "fieldtype": "Link",
+      "label": "Debit Account",
+      "options": "Account",
+      "reqd": 1
+    },
+    {
+      "fieldname": "credit_account",
+      "fieldtype": "Link",
+      "label": "Credit Account",
+      "options": "Account",
+      "reqd": 1
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Is Active",
+      "default": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "HR Accrual Admin",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Finance Accrual Controller",
+      "read": 1
+    },
+    {
+      "role": "Accrual Auditor",
+      "read": 1
+    }
+  ],
+  "autoname": "field:component_name"
+}

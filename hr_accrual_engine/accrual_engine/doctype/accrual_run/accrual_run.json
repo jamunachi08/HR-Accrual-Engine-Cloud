@@ -1,0 +1,63 @@
+{
+  "doctype": "DocType",
+  "name": "Accrual Run",
+  "module": "HR Accrual Engine",
+  "custom": 0,
+  "is_submittable": 1,
+  "issingle": 0,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "posting_date",
+      "fieldtype": "Date",
+      "label": "Posting Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nProcessing\nCompleted\nFailed",
+      "default": "Draft"
+    },
+    {
+      "fieldname": "logs",
+      "fieldtype": "Table",
+      "label": "Logs",
+      "options": "Accrual Run Log"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "HR Accrual Admin",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1
+    },
+    {
+      "role": "HR Accrual Operator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    },
+    {
+      "role": "Finance Accrual Controller",
+      "read": 1
+    },
+    {
+      "role": "Accrual Auditor",
+      "read": 1
+    }
+  ],
+  "autoname": "hash"
+}

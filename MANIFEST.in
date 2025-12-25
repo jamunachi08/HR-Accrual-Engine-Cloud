@@ -1,0 +1,5 @@
+recursive-include hr_accrual_engine *.json *.py *.md *.js *.css *.html
+recursive-include hr_accrual_engine/public *
+recursive-include hr_accrual_engine/config *
+recursive-include hr_accrual_engine/fixtures *.json
+include README.md

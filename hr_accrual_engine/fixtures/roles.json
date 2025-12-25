@@ -1,0 +1,22 @@
+[
+  {
+    "doctype": "Role",
+    "name": "HR Accrual Admin",
+    "role_name": "HR Accrual Admin"
+  },
+  {
+    "doctype": "Role",
+    "name": "HR Accrual Operator",
+    "role_name": "HR Accrual Operator"
+  },
+  {
+    "doctype": "Role",
+    "name": "Finance Accrual Controller",
+    "role_name": "Finance Accrual Controller"
+  },
+  {
+    "doctype": "Role",
+    "name": "Accrual Auditor",
+    "role_name": "Accrual Auditor"
+  }
+]

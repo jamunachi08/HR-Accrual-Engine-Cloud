@@ -1,0 +1,40 @@
+{
+  "doctype": "DocType",
+  "name": "Accrual Run Log",
+  "module": "HR Accrual Engine",
+  "custom": 0,
+  "is_submittable": 0,
+  "issingle": 0,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "label": "Employee",
+      "options": "Employee",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "component",
+      "fieldtype": "Link",
+      "label": "Accrual Component",
+      "options": "Accrual Component",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "journal_entry",
+      "fieldtype": "Link",
+      "label": "Journal Entry",
+      "options": "Journal Entry",
+      "in_list_view": 1
+    }
+  ],
+  "permissions": [],
+  "autoname": "hash"
+}

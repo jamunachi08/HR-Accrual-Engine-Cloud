@@ -1,0 +1,121 @@
+{
+  "doctype": "DocType",
+  "name": "Accrual Settings",
+  "module": "HR Accrual Engine",
+  "custom": 0,
+  "is_submittable": 0,
+  "issingle": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "enable_scheduler",
+      "fieldtype": "Check",
+      "label": "Enable Scheduler",
+      "default": 0
+    },
+    {
+      "fieldname": "months_in_year",
+      "fieldtype": "Int",
+      "label": "Months In Year",
+      "default": "12"
+    },
+    {
+      "fieldname": "salary_days_divisor",
+      "fieldtype": "Int",
+      "label": "Salary Days Divisor",
+      "default": "30"
+    },
+    {
+      "fieldname": "rounding_precision",
+      "fieldtype": "Int",
+      "label": "Rounding Precision",
+      "default": "2"
+    },
+    {
+      "fieldname": "eos_transition_months",
+      "fieldtype": "Int",
+      "label": "EOS Transition Months",
+      "default": "60"
+    },
+    {
+      "fieldname": "eos_first_rate",
+      "fieldtype": "Float",
+      "label": "EOS First Rate (<= Transition)",
+      "default": "0.5"
+    },
+    {
+      "fieldname": "eos_after_rate",
+      "fieldtype": "Float",
+      "label": "EOS After Rate (> Transition)",
+      "default": "1"
+    },
+    {
+      "fieldname": "section_break_1",
+      "fieldtype": "Section Break",
+      "label": "Employee Field Mappings"
+    },
+    {
+      "fieldname": "employee_salary_fieldname",
+      "fieldtype": "Data",
+      "label": "Employee Salary Fieldname",
+      "default": "salary"
+    },
+    {
+      "fieldname": "employee_fixed_package_fieldname",
+      "fieldtype": "Data",
+      "label": "Employee Fixed Package Fieldname",
+      "default": "fixed_package"
+    },
+    {
+      "fieldname": "employee_annual_leave_days_fieldname",
+      "fieldtype": "Data",
+      "label": "Employee Annual Leave Days Fieldname",
+      "default": "annual_leave_days"
+    },
+    {
+      "fieldname": "employee_ticket_amount_fieldname",
+      "fieldtype": "Data",
+      "label": "Employee Ticket Amount Fieldname",
+      "default": "ticket_amount"
+    },
+    {
+      "fieldname": "section_break_2",
+      "fieldtype": "Section Break",
+      "label": "Formulas"
+    },
+    {
+      "fieldname": "ticket_formula",
+      "fieldtype": "Code",
+      "label": "Ticket Formula",
+      "default": "ticket_amount / months_in_year"
+    },
+    {
+      "fieldname": "leave_formula",
+      "fieldtype": "Code",
+      "label": "Leave Formula",
+      "default": "(daily_salary * annual_leave_days) / months_in_year"
+    },
+    {
+      "fieldname": "eos_formula_first",
+      "fieldtype": "Code",
+      "label": "EOS Formula First",
+      "default": "(salary * eos_first_rate) / months_in_year"
+    },
+    {
+      "fieldname": "eos_formula_after",
+      "fieldtype": "Code",
+      "label": "EOS Formula After",
+      "default": "(salary * eos_after_rate) / months_in_year"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "HR Accrual Admin",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "autoname": "Accrual Settings"
+}

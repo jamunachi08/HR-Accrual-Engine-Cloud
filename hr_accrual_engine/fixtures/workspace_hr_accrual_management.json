@@ -1,0 +1,14 @@
+[
+  {
+    "doctype": "Workspace",
+    "name": "HR Accrual Management",
+    "label": "HR Accrual Management",
+    "title": "HR Accrual Management",
+    "icon": "organization",
+    "module": "HR Accrual Engine",
+    "is_standard": 1,
+    "public": 1,
+    "content": "[{\"type\": \"header\", \"data\": {\"text\": \"HR Accrual Management\", \"level\": 1}}, {\"type\": \"shortcut\", \"data\": {\"label\": \"Accrual Settings\", \"link_to\": \"Accrual Settings\", \"type\": \"DocType\"}}, {\"type\": \"shortcut\", \"data\": {\"label\": \"Accrual Component\", \"link_to\": \"Accrual Component\", \"type\": \"DocType\"}}, {\"type\": \"shortcut\", \"data\": {\"label\": \"Employee Accrual\", \"link_to\": \"Employee Accrual\", \"type\": \"DocType\"}}, {\"type\": \"shortcut\", \"data\": {\"label\": \"Accrual Run\", \"link_to\": \"Accrual Run\", \"type\": \"DocType\"}}, {\"type\": \"spacer\"}, {\"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"labels\": [\"Accrual Run\", \"Journal Entry\"]}}]",
+    "sequence_id": 1
+  }
+]
