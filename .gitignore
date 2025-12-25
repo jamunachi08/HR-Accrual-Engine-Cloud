@@ -1,0 +1,37 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Frappe / Bench runtime (should not be committed in app repo)
+*.log
+*.sqlite
+sites/
+logs/
+pids/
+*.egg-info/
+dist/
+build/
+
+# Node / frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
