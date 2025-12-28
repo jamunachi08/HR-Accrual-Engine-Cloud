@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hr_accrual_engine"
+version = "1.0.0"
+description = "Configurable HR accrual engine (Ticket, Leave, EOS) with GL postings for Frappe/ERPNext"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Proprietary"}
+authors = [
+  {name = "Neotec", email = "support@neotec.ai"}
+]
+dependencies = []
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hr_accrual_engine*"]
